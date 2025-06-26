@@ -14,7 +14,7 @@
     }
   },
   "cota_baseline": {
-    "file_name": "baseline_mma_mantis_tool_positive_293k_lf.json.json",
+    "file_name": "baseline_mma_mantis_tool_positive_293k_lf.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
