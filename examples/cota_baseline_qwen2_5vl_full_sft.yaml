@@ -24,7 +24,8 @@ dataloader_num_workers: 8
 ### output
 output_dir: /weka/jieyuz/LLaMA-Factory/saves/qwen2_5vl-7b/full/sft/baseline
 logging_steps: 10
-save_steps: 8000
+save_steps: 1000
+save_total_limit: 5
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
@@ -39,7 +40,8 @@ lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
-resume_from_checkpoint: null
+resume_from_checkpoint: true
+
 
 ### eval
 # val_size: 0.1
