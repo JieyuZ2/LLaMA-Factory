@@ -1,6 +1,6 @@
 {
   "cota_293k": {
-    "file_name": "cota_293k.json",
+    "file_name": "cota_293k_lf.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
