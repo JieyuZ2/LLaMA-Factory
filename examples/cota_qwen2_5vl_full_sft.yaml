@@ -39,7 +39,7 @@ lr_scheduler_type: cosine
 warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
-resume_from_checkpoint: null
+resume_from_checkpoint: /weka/jieyuz/LLaMA-Factory/saves/qwen2_5vl-7b/full/sft/cota/checkpoint-16000
 
 ### eval
 # val_size: 0.1
