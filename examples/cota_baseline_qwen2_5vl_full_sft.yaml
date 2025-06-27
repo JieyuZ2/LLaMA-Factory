@@ -9,22 +9,22 @@ stage: sft
 do_train: true
 finetuning_type: full
 freeze_vision_tower: true
-freeze_multi_modal_projector: true
+freeze_multi_modal_projector: false
 freeze_language_model: false
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
 dataset: cota_baseline
 template: qwen2_vl
-cutoff_len: 4096
+cutoff_len: 8192
 overwrite_cache: true
 preprocessing_num_workers: 16
-dataloader_num_workers: 4
+dataloader_num_workers: 8
 
 ### output
 output_dir: /weka/jieyuz/LLaMA-Factory/saves/qwen2_5vl-7b/full/sft/baseline
 logging_steps: 10
-save_steps: 500
+save_steps: 1000
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
