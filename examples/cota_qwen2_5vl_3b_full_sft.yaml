@@ -24,7 +24,8 @@ dataloader_num_workers: 8
 ### output
 output_dir: /weka/jieyuz/LLaMA-Factory/saves/qwen2_5vl-3b/full/sft/cota
 logging_steps: 10
-save_steps: 8000
+save_steps: 1000
+save_total_limit: 5
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: false
